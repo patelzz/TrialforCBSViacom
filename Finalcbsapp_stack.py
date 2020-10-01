@@ -27,14 +27,5 @@ class CbsappStack(core.Stack):
                                ,partition_key=dynamodb.Attribute(name='lastname',type=dynamodb.AttributeType.STRING))
 
 
-        function = _lambda.Function(
-            scope         = self,
-            id            = 'lambdafunction',
-            function_name = '_lambda',
-            code          = _lambda.Code.asset('lambdacode'),
-            handler       = 'lambdahandler.main',
-            runtime       = _lambda.Runtime.PROVIDED,
-            memory_size   = 512,
-            timeout       = core.Duration.seconds(120)
-        )
+
         topic.add_subscription(subs.SqsSubscription(queue))
