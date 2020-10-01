@@ -9,7 +9,6 @@ from aws_cdk import (
 )
 
 
-
 class CbsappStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
