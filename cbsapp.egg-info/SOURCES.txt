@@ -1,0 +1,6 @@
+README.md
+cbsapp/cbsapp.egg-info/PKG-INFO
+cbsapp/cbsapp.egg-info/SOURCES.txt
+cbsapp/cbsapp.egg-info/dependency_links.txt
+cbsapp/cbsapp.egg-info/requires.txt
+cbsapp/cbsapp.egg-info/top_level.txt
